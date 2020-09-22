@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="upload">
-      <label>去上传</label>
+      <label>Upload</label>
       <input type="file" class="file" />
     </div>
   </section>

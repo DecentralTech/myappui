@@ -3,52 +3,58 @@
     <div class="wrapper">
       <div class="title">
         <div class="cross"></div>
-        <div class="hot">热门书籍</div>
+        <div class="hot">Popular Books</div>
       </div>
       <div class="content">
         <div class="item">
           <div class="img-wrapper">
-            <img src="../../static/bookCover2.png" />
+            <img src="../../static/bookCover1.png" />
           </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
+          <div class="item-name">The Second Coming of Christ</div>
+          <span class="introduce">by Robert E. Speer</span>
         </div>
         <div class="item">
           <div class="img-wrapper">
-            <img src="../../static/bookCover1.png" />
+            <img src="../../static/bookCover2.png" />
           </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
+          <div class="item-name">The Political History of the Devil</div>
+          <span class="introduce">by Daniel Defoe</span>
         </div>
         <div class="item">
           <div class="img-wrapper">
             <img src="../../static/bookCover3.png" />
           </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
-        </div>
-         <div class="item">
-          <div class="img-wrapper">
-            <img src="../../static/bookCover2.png" />
-          </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
+          <div class="item-name">Secrets of Mental Supremacy</div>
+          <span class="introduce">by William Richard Cunningham Latson</span>
         </div>
         <div class="item">
           <div class="img-wrapper">
-            <img src="../../static/bookCover1.png" />
+            <img src="../../static/bookCover4.png" />
           </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
+          <div class="item-name">Thought Power</div>
+          <span class="introduce">by Annie Wood Besant</span>
         </div>
         <div class="item">
           <div class="img-wrapper">
-            <img src="../../static/bookCover3.png" />
+            <img src="../../static/bookCover5.png" />
           </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
+          <div class="item-name">Aryan Sun-Myths</div>
+          <span class="introduce">by Sarah Elizabeth Titcomb</span>
+        </div>
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="../../static/bookCover6.png" />
+          </div>
+          <div class="item-name">Logic, in Three Books</div>
+          <span class="introduce">by Hermann Lotze</span>
         </div>
       </div>
+      <!-- <div class="no-content">
+          <div class="no-img">
+              <img src="../../static/noBook.png" alt="">
+          </div>
+          <div class="no-tip">No Books</div>
+      </div>-->
     </div>
   </section>
 </template>
@@ -88,7 +94,6 @@ export default {};
 }
 .item {
   width: 33.3%;
-  padding-bottom: 6px;
 }
 .item:nth-child(3n + 1) {
   padding-right: 4px;
@@ -101,7 +106,7 @@ export default {};
   padding-left: 4px;
 }
 .img-wrapper {
-  height: 103px;
+  height: 128px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,10 +125,31 @@ export default {};
   white-space: nowrap;
 }
 .introduce {
+  display: inline-block;
+  width: 100%;
   font-size: 12px;
-  color: rgba(129, 129, 129,0.7);
+  color: rgba(129, 129, 129, 0.7);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.no-content {
+  width: 100%;
+}
+.no-img {
+  width: 40%;
+  margin: auto;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-img > img {
+  display: block;
+  width: 100%;
+}
+.no-tip {
+  text-align: center;
+  color: #222222;
 }
 </style>

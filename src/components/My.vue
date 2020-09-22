@@ -3,45 +3,58 @@
     <div class="wrapper">
       <div class="title">
         <div class="cross"></div>
-        <div class="hot">我的书籍</div>
-        <div class="total">共上传5本书籍</div>
+        <div class="hot">Sharing Books</div>
+        <div class="total">A total of 5 books</div>
       </div>
-      <div class="content">
+      <!-- <div class="content">
         <div class="item">
           <div class="img-wrapper">
-            <img src="../../static/bookCover2.png" />
+            <img src="../../static/bookCover7.png" />
           </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
+          <div class="item-name">The Lost Lemuria</div>
+          <span class="introduce">by W. Scott-Elliot</span>
         </div>
         <div class="item">
           <div class="img-wrapper">
-            <img src="../../static/bookCover1.png" />
+            <img src="../../static/bookCover8.png" />
           </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
+          <div class="item-name">Atlantis</div>
+          <span class="introduce">by Ignatius Donnelly</span>
         </div>
         <div class="item">
           <div class="img-wrapper">
-            <img src="../../static/bookCover3.png" />
+            <img src="../../static/bookCover9.png" />
           </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
+          <div class="item-name">A Guide to Mythology</div>
+          <span class="introduce">by Helen Archibald Clarke</span>
         </div>
         <div class="item">
           <div class="img-wrapper">
-            <img src="../../static/bookCover2.png" />
+            <img src="../../static/bookCover12.png" />
           </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
+          <div class="item-name">Moon Lore</div>
+          <span class="introduce">by Timothy Harley</span>
         </div>
         <div class="item">
           <div class="img-wrapper">
-            <img src="../../static/bookCover1.png" />
+            <img src="../../static/bookCover11.png" />
           </div>
-          <div class="item-name">庆余年</div>
-          <span class="introduce">烧烤炸鸡啤酒</span>
+          <div class="item-name">Why the Mind Has a Body</div>
+          <span class="introduce">by Charles Augustus Strong</span>
         </div>
+        <div class="item">
+          <div class="img-wrapper">
+            <img src="../../static/bookCover10.png" />
+          </div>
+          <div class="item-name">Our Story of Atlantis</div>
+          <span class="introduce">by William P. Phelon</span>
+        </div>
+      </div> -->
+      <div class="no-content">
+          <div class="no-img">
+              <img src="../../static/noBook.png" alt="">
+          </div>
+          <div class="no-tip">No Books</div>
       </div>
     </div>
   </section>
@@ -85,7 +98,6 @@ export default {};
 }
 .item {
   width: 33.3%;
-  padding-bottom: 6px;
 }
 .item:nth-child(3n + 1) {
   padding-right: 4px;
@@ -98,7 +110,7 @@ export default {};
   padding-left: 4px;
 }
 .img-wrapper {
-  height: 103px;
+  height: 128px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,11 +129,31 @@ export default {};
   white-space: nowrap;
 }
 .introduce {
+      display: inline-block;
+  width: 100%;
   font-size: 12px;
   color: rgba(129, 129, 129, 0.7);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
+.no-content{
+    width: 100%;
+}
+.no-img{
+    width: 40%;
+    margin: auto;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-img>img{
+    display: block;
+    width:100%;
+}
+.no-tip{
+    text-align: center;
+    color: #222222;
+}
 </style>
