@@ -1,17 +1,34 @@
 <template>
   <div id="q-app">
-    <p v-for='(item, index) of Object.keys(stuff)' :key="index">
-      <span>{{ item }}</span>
-      <span> -> -> -> </span>
-      <span>{{ stuff[item] }}</span>
-    </p>
+    <div class="top-container">
+      <Header></Header>
+      <Banner class="banner"></Banner>
+      <Search class="search"></Search>
+    </div>
+      <Hot></Hot>
+      <My></My>
+      <Upload></Upload>
   </div>
 </template>
 <script>
 import { createPow } from '@textile/powergate-client'
+import Header from './components/Header'
+import Banner from './components/Banner'
+import Hot from './components/Hot'
+import My from './components/My'
+import Upload from './components/Upload'
+import Search from './components/Search'
 
 export default {
   name: 'App',
+  components:{
+    Header,
+    Banner,
+    Hot,
+    My,
+    Upload,
+    Search
+  },
   data() {
     return {
       stuff: {
@@ -49,3 +66,19 @@ export default {
   }
 }
 </script>
+<style scoped>
+.top-container{
+  width: 100vw;
+  background-image: url('./static/background.png');
+  background-size: cover;
+  position: relative;
+}
+.banner{
+  padding-top: 20px;
+}
+.search {
+  position:absolute;
+  top:71px;
+  right: 20px;
+}
+</style>
