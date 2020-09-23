@@ -10,29 +10,29 @@
           <div class="img-wrapper">
             <img src="../static/picture1.png" />
           </div>
-          <div class="item-name">WWE第1246期</div>
-          <span class="introduce">精彩回放</span>
+          <div class="item-name">WWE 1246</div>
+          <div class="introduce">Wonderful playback</div>
         </div>
         <div class="item">
           <div class="img-wrapper">
             <img src="../static/picture3.png" />
           </div>
-          <div class="item-name">全国21日新增6例确诊</div>
-          <span class="introduce">境外输入</span>
+          <div class="item-name">Six new cases were confirmed nationwide on the 21st</div>
+          <div class="introduce">Overseas import</div>
         </div>
         <div class="item">
           <div class="img-wrapper">
             <img src="../static/picture2.png" />
           </div>
-          <div class="item-name">极限挑战宝藏行</div>
-          <span class="introduce">魏大勋刘宇宇抢人大战</span>
+          <div class="item-name">Ultimate challenge treasure line</div>
+          <div class="introduce">Wei daxun and Liu yuyu </div>
         </div>
          <div class="item">
           <div class="img-wrapper">
             <img src="../static/picture4.png" />
           </div>
-          <div class="item-name">刘宇定最美逆行者</div>
-          <span class="introduce">OST来袭：感谢所有逆行者</span>
+          <div class="item-name">Liu Yuding is the most beautiful rebel</div>
+          <div class="introduce">OST coming: Thank you to all those who are against it </div>
         </div>
       </div>
     </div>
@@ -94,6 +94,7 @@ export default {};
   height: 100%;
 }
 .item-name {
+  /* width: 50%; */
   font-size: 14px;
   font-weight: 600;
   padding-top: 4px;
