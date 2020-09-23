@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="search">
-      <input type="search" name="" class="sear" @click="search">
+      <input type="search" name="" class="sear" placeholder="Please search">
       <img src="../static/search.png" alt="">
     </div>
   </section>

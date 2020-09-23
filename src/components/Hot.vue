@@ -11,7 +11,7 @@
             <img src="../static/flieLogo.png" />
           </div>
           <div class="content-wrapper">
-            <div class="item-name">阿里云镜像资源站</div>
+            <div class="item-name">Alicloud image resource station</div>
             <span class="introduce">5G</span>
           </div>
            <div class="date-wrapper">
@@ -23,7 +23,7 @@
             <img src="../static/flieLogo.png" />
           </div>
           <div class="content-wrapper">
-            <div class="item-name">阿里云镜像资源站</div>
+            <div class="item-name">Alicloud image resource station</div>
             <span class="introduce">5G</span>
           </div>
            <div class="date-wrapper">
@@ -35,7 +35,7 @@
             <img src="../static/flieLogo.png" />
           </div>
           <div class="content-wrapper">
-            <div class="item-name">阿里云镜像资源站</div>
+            <div class="item-name">Alicloud image resource station</div>
             <span class="introduce">5G</span>
           </div>
            <div class="date-wrapper">
@@ -108,6 +108,10 @@ export default {};
 }
 .content-wrapper{
   /* margin-left: -90px; */
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content-wrapper .item-name {
   font-size: 14px;

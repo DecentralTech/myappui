@@ -3,7 +3,7 @@
     <div class="top-container">
       <Header></Header>
       <Banner class="banner"></Banner>
-      <Search class="search"></Search>
+      <!-- <Search class="search"></Search> -->
     </div>
       <Hot></Hot>
       <My></My>
